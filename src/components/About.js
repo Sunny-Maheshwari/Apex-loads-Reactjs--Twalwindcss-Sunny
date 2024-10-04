@@ -4,6 +4,7 @@ import img2 from "../assets/Vector 12.png";
 import img4 from "../assets/Vector 10.png";
 import img5 from "../assets/pic.png";
 import popMsg from "../assets/messagePop.png";
+import Slider from "./Slider";
 
 const About = () => {
   return (
@@ -94,7 +95,9 @@ const About = () => {
             </div>
           </div>
         </div>
+
       </div>
+        <Slider />
     </div>
   );
 };
