@@ -34,29 +34,27 @@ const creators = [
 
 const Slider = () => {
   return (
-    <div className="h-screen bg-black flex items-center justify-center p-20">
-      <div className="container mx-auto py-12 space-y-20">
-        <div className="flex flex-row justify-between items-center">
-          <h3 className="text-6xl font-bold text-white text-left">
-            Services We <span class="text-red-600">Offer</span>
+    <div className="min-h-screen bg-black flex items-center justify-center p-4 sm:p-8 md:p-12 lg:p-20">
+      <div className="container mx-auto py-8 sm:py-12 space-y-8 sm:space-y-12">
+        <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+          <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white text-center sm:text-left">
+            Services We <span className="text-red-600">Offer</span>
           </h3>
-          <div className="hidden sm:flex">
-            <button className="hover:bg-red-400 cursor-pointer bg-[#D91E27] text-white rounded-full btn-sm w-[100px]">
-              Know more
-            </button>
-          </div>
+          <button className="hover:bg-red-400 cursor-pointer bg-[#D91E27] text-white rounded-full btn-sm w-[120px] sm:w-[140px]">
+            Know more
+          </button>
         </div>
-        <div className="carousel w-full flex overflow-x-auto space-x-6 snap-x snap-mandatory">
+        <div className="carousel w-full flex overflow-x-auto space-x-4 sm:space-x-6 snap-x snap-mandatory pb-4">
           {creators.map((creator, index) => (
-            <div className="card bg-base-100 w-96 shadow-xl">
-              <figure>
-                <img src={creator.img} alt="Shoes" />
+            <div key={index} className="card bg-base-100 w-[280px] sm:w-[320px] md:w-[360px] lg:w-96 shadow-xl flex-shrink-0 snap-center">
+              <figure className="px-4 pt-4">
+                <img src={creator.img} alt={creator.name} className="rounded-xl" />
               </figure>
-              <div className="card-body">
-                <h2 className="card-title">{creator.name}</h2>
-                <p>{creator.description}</p>
-                <div className="hidden sm:flex">
-                  <button className="hover:bg-red-400 cursor-pointer bg-[#D91E27] text-white rounded-full btn-sm w-[100px]">
+              <div className="card-body px-4 py-5">
+                <h2 className="card-title text-lg sm:text-xl">{creator.name}</h2>
+                <p className="text-sm sm:text-base">{creator.description}</p>
+                <div className="card-actions justify-end mt-4">
+                  <button className="hover:bg-red-400 cursor-pointer bg-[#D91E27] text-white rounded-full btn-sm w-[100px] sm:w-[120px]">
                     Know more
                   </button>
                 </div>

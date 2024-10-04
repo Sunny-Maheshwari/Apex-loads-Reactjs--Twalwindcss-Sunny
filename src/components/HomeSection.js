@@ -6,10 +6,10 @@ import { BsArrowRight } from "react-icons/bs";
 
 const HomeSection = () => {
   return (
-    <div className="relative bg-[url('/src/assets/hero-bg.jpg')] bg-cover bg-center h-screen w-full text-white">
-      <div className="relative w-full flex flex-col md:flex-row items-center justify-between h-full px-4 md:px-20">
+    <div className="relative bg-[url('/src/assets/hero-bg.jpg')] bg-cover bg-center min-h-screen w-full text-white flex items-center justify-center">
+      <div className="relative w-full flex flex-col items-center justify-center px-4 py-8 md:py-0 md:px-20">
         {/* Left Section: Decorative Images */}
-        <div className="hidden md:block w-1/4 relative right-[100px] top-[-150px]">
+        <div className="hidden md:block w-1/4 relative right-[640px] bottom-[-20px]">
           <img
             src={img1}
             alt="Icon 1"
@@ -27,25 +27,14 @@ const HomeSection = () => {
           />
         </div>
 
-        {/* Right Section: Text Content */}
+        {/* Text Content */}
         <div className="w-full md:w-3/4 flex flex-col items-center justify-center text-center">
-          <div className="w-full">
-            <h1 className="text-6xl md:text-6xl lg:text-8xl font-extrabold uppercase">
-              Reliable
-            </h1>
-            <h1 className="text-6xl md:text-6xl lg:text-8xl font-extrabold uppercase">
-              Transport
-            </h1>
-          </div>
-          <div className="w-full mt-2">
-            <p className="text-3
-            xl md:text-4xl lg:text-5xl font-extrabold uppercase">
-              Solutions for
-            </p>
-            <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase">
-              Your Freight
-            </p>
-          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold uppercase leading-tight">
+            Reliable<br />Transport
+          </h1>
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase mt-2 leading-tight">
+            Solutions for<br />Your Freight
+          </p>
           <button className="flex justify-between items-center mt-6 px-4 py-2 font-extrabold bg-transparent border border-gray-100 text-white text-sm md:text-md rounded-full hover:bg-gray-700">
             Book Your Free Trial{" "}
             <BsArrowRight className="text-white ml-2 self-center" size={"25px"} />
