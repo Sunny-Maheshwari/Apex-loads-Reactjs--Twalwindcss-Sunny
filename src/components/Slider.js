@@ -53,7 +53,7 @@ const Slider = () => {
               <div className="card-body px-4 py-5">
                 <h2 className="card-title text-lg sm:text-xl">{creator.name}</h2>
                 <p className="text-sm sm:text-base">{creator.description}</p>
-                <div className="card-actions justify-end mt-4">
+                <div className="card-actions justify-start mt-4">
                   <button className="hover:bg-red-400 cursor-pointer bg-[#D91E27] text-white rounded-full btn-sm w-[100px] sm:w-[120px]">
                     Know more
                   </button>
