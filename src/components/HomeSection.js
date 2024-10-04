@@ -9,7 +9,7 @@ const HomeSection = () => {
     <div className="relative bg-[url('/src/assets/hero-bg.jpg')] bg-cover bg-center h-screen w-full text-white">
       <div className="relative w-full flex flex-col md:flex-row items-center justify-between h-full px-4 md:px-20">
         {/* Left Section: Decorative Images */}
-        <div className="hidden md:block w-1/4 relative right-[50px] top-[-50px]">
+        <div className="hidden md:block w-1/4 relative right-[100px] top-[-150px]">
           <img
             src={img1}
             alt="Icon 1"
@@ -18,7 +18,7 @@ const HomeSection = () => {
           <img
             src={img2}
             alt="Icon 2"
-            className="absolute top-[245px] right-[75px] w-[120px] md:w-[162px]"
+            className="absolute top-[190px] right-[95px] w-[120px] md:w-[162px]"
           />
           <img
             src={img4}
@@ -38,7 +38,8 @@ const HomeSection = () => {
             </h1>
           </div>
           <div className="w-full mt-2">
-            <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase">
+            <p className="text-3
+            xl md:text-4xl lg:text-5xl font-extrabold uppercase">
               Solutions for
             </p>
             <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase">
