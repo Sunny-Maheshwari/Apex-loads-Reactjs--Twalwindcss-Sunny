@@ -2,6 +2,8 @@ import React from "react";
 import img3 from "../assets/truck.png";
 import img2 from "../assets/Vector 12.png";
 import img4 from "../assets/Vector 10.png";
+import img5 from "../assets/pic.png";
+import popMsg from "../assets/messagePop.png";
 
 const About = () => {
   return (
@@ -44,6 +46,53 @@ const About = () => {
             alt="Icon 2"
             className="absolute top-[158px] right-[120px] w-[142px] h-[80px] hidden lg:block"
           />
+        </div>
+      </div>
+      <div class="flex flex-row justify-evenly items-start p-20 w-full bg-black h-full">
+        <div class="w-1/2 flex items-center justify-center">
+          <img
+            src={img5}
+            alt="Man"
+            class="rounded-md shadow-lg w-[400px] h-auto object-cover"
+          />
+        </div>
+
+        <div class="w-1/2">
+          <h2 class="text-4xl md:text-7xl font-bold text-white mb-6">
+            Why Choose <span class="text-red-600">Us</span>
+          </h2>
+
+          <div class="relative flex flex-col space-x-[60px] justify-between">
+            <div class="w-[2px] bg-white h-[502px] absolute top-12"></div>
+
+            <div class="relative p-5 space-y-10 ml-8">
+              <div class="bg-red-600 text-white p-5 rounded-md shadow-lg w-[350px]">
+                <h3 class="font-bold text-xl">
+                  Proven Track Record of Excellence
+                </h3>
+                <p>
+                  At Apex Loads, we pride ourselves on our proven track record
+                  of excellence in the logistics industry. With years of
+                  experience and a deep understanding of Africa's unique
+                  logistical challenges, we have established ourselves as a
+                  trusted partner for businesses across the continent.
+                </p>
+              </div>
+
+              <div class="bg-red-600 text-white p-5 rounded-md shadow-lg w-[350px]">
+                <h3 class="font-bold text-xl">
+                  Comprehensive Solutions Tailored to Your Needs
+                </h3>
+                <p>
+                  We offer comprehensive logistics solutions tailored to meet
+                  the specific needs of cargo owners, brokers, and shippers.
+                  Whether you are looking to optimize your supply chain,
+                  streamline operations, or enhance visibility and control, Apex
+                  Loads has the expertise and technology to deliver.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
