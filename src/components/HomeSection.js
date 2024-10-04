@@ -29,7 +29,7 @@ const HomeSection = () => {
 
         {/* Text Content */}
         <div className="w-full md:w-3/4 flex flex-col items-center justify-center text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold uppercase leading-tight">
+          <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold uppercase leading-tight">
             Reliable<br />Transport
           </h1>
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase mt-2 leading-tight">

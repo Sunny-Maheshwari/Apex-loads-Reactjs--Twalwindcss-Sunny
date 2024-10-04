@@ -36,14 +36,14 @@ const About = () => {
             <img 
               src={img3} 
               alt="Truck" 
-              className="w-1/2 object-cover mx-auto"
+              className="w-1/2 object-cover mx-auto mr-[200px]"
             />
             {/* Overlay images */}
             <div className="">
             <img
               src={img4}
               alt="Icon 4"
-              className="absolute bottom-[47%] left-[47%] w-1/4 h-auto"
+              className="absolute bottom-[47%] left-[46%] w-1/4 h-auto"
             />
             <img
               src={img2}
