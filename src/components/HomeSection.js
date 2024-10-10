@@ -29,16 +29,14 @@ const HomeSection = () => {
 
         {/* Text Content */}
         <div className="w-full md:w-3/4 flex flex-col items-center justify-center text-center">
-          <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold uppercase leading-tight">
-            Reliable<br />Transport
-          </h1>
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase mt-2 leading-tight">
-            Solutions for<br />Your Freight
-          </p>
-          <button className="flex justify-between items-center mt-6 px-4 py-2 font-extrabold bg-transparent border border-gray-100 text-white text-sm md:text-md rounded-full hover:bg-gray-700">
+          <h1 class="lg:text-[118px] text-5xl font-bold z-10 text-start ">RELIABLE <br /><span>TRANSPORT</span></h1>
+          <p class="lg:text-[52px] text-[24px] font-medium mt-4 z-10 md:ml-48 text-start">SOLUTION FOR <br /> YOUR FREIGHT</p>
+          {/* <button className="flex justify-between items-center mt-6 px-4 py-2 font-extrabold bg-transparent border border-gray-100 text-white text-sm md:text-md rounded-full hover:bg-gray-700">
             Book Your Free Trial{" "}
             <BsArrowRight className="text-white ml-2 self-center" size={"25px"} />
-          </button>
+          </button> */}
+          <a href="#" class="mt-8 inline-block border-2 text-white py-2 px-6 rounded-full mt-4 flex gap-3 z-10 md:ml-48">Book Your Free Trial             <BsArrowRight className="text-white ml-2 self-center" size={"25px"} />
+          </a>
         </div>
       </div>
     </div>
